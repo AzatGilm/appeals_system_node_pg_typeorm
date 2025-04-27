@@ -16,9 +16,9 @@ npm install
 ## Запустить в дев режиме
 ```
 bash
-npm run dev```
-
-
+npm run dev
+```
+```
 ## Параметры .env
 
 DB_HOST=localhost
@@ -29,6 +29,7 @@ DB_DATABASE=appeals_system
 SERVER_PORT=3000
 
 ```
+```
 Endpoints
 Метод	Путь	Действие
 POST	/appeals	Создать обращение
@@ -36,4 +37,5 @@ PATCH	/appeals/:id/take-to-work	Взять в работу
 PATCH	/appeals/:id/complete	Завершить с решением
 PATCH	/appeals/:id/cancel	Отменить с причиной
 GET	/appeals?date=YYYY-MM-DD	Фильтр по дате/диапазону
-PATCH	/appeals/cancel-all-in-progress	Отменить все "в работе"```
+PATCH	/appeals/cancel-all-in-progress	Отменить все "в работе"
+```
