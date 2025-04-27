@@ -1,9 +1,12 @@
+import 'reflect-metadata';
 import express from "express";
 import { AppDataSource } from "./data-source";
+import { appealsRouter } from "./routes/appeals.routes";
 
 const app = express();
 const PORT = process.env.SERVER_PORT || 3000;
 app.use(express.json());
+app.use('/appeals', appealsRouter);
 // console.log(process.env.DB_PORT);
 
 

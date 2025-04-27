@@ -8,7 +8,7 @@ export class AppealService {
     this.appealRepository = new AppealRepository();
   }
 
-  async createAppeal(subject: string, description: string) {
+  async createAppeal(subject: string, description: string) : Promise<Appeal> {
     const appeal = new Appeal();
     appeal.subject = subject;
     appeal.description = description;
